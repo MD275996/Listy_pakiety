@@ -1,4 +1,7 @@
 #znajdowanie optymalnej trasy
+#sposób myślenia:
+#patrząc na macierz terenu obliczamy nową macierz, zaczynając od dołu, licząc koszta dostania się do tego pola i sumując je dla całęgo wiersza
+#wtedy na samej górze pole z najmniejszą wartością będzie końcem naszej trasy, i cofamy się
 using LinearAlgebra
 
 teren = [10 10 10 1 10 10 10;
